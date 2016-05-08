@@ -346,6 +346,9 @@ html,body {
 	-webkit-box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.25);
 	-moz-box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.25);
 	box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.25);
+	line-height: 100px;
+	font-size: 40px;
+	padding-top: 27px;
 }
 #pris-paket #line {
 	position: absolute;
