@@ -4,7 +4,7 @@ html,body {
 #main-jumbo {
 	text-align: center;
 	height: 580px;
-	background: url('/img/jumbotron-background.png') center center no-repeat;
+	background: url('../img/jumbotron-background.png') center center no-repeat;
 	color: white;
 	width: 100%;
 }
