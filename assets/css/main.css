@@ -336,12 +336,15 @@ html,body {
 	width: 100px;
 	height: 100px;
 	border-radius: 50px;
-	background-color: blue;
+	background-color: #eeeeee;
 	margin-top: 5px;
 	position: absolute;
 	left: 0;
   right: 0;
 	border: 5px solid #eeeeee;
+	-webkit-box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.25);
+-moz-box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.25);
+box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.25);
 }
 #pris-paket #line {
 	position: absolute;
