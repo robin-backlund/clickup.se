@@ -39,7 +39,7 @@ html,body {
 	height: 200px;
 	border-radius: 5px;
 
-	color: orange;
+	color: #31b0d5;
 	padding-top: 5px;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -56,7 +56,7 @@ html,body {
 	color: gray;
 }
 #resp-container {
-	background-color: #ffb400;
+	background-color: #418ee5;
 	min-height: 200px;
 	overflow: hidden;
 	padding-bottom: 60px;
@@ -110,7 +110,7 @@ html,body {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 80px;
-	background-color: #ffb400;
+	background-color: #418ee5;
 	border: 1px solid #d8d8d8;
 	line-height: 100px;
 	text-align: center;
@@ -119,7 +119,7 @@ html,body {
 }
 #contact-us:hover {
 	cursor: pointer;
-	background-color: orange;
+	background-color: #31b0d5;
 }
 #footer {
 	background-color: #565656;
@@ -148,7 +148,7 @@ html,body {
 }
 #checkbox {
 	float: right;
-	color: orange;
+	color: #31b0d5;
 	opacity: 0.6;
 	margin-right: 20px;
 	margin-top: -10px;
@@ -172,7 +172,7 @@ html,body {
 }
 #page-jumbo {
 	min-height: 330px;
-	background-color: #ffb400;
+	background-color: #418ee5;
 	text-align: center;
 	padding-top: 0px;
 }
