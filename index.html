@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style/style.css" type="text/css">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <meta name="viewport" content="initial-scale=1">
     <title>ClickUp - Personliga & Billiga hemsidor till privatpersoner & företag</title>
@@ -46,22 +45,45 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac interdum risus. Morbi nec porta odio, quis lobortis lorem. Ut porta viverra tellus non tincidunt. Curabitur consequat mauris et felis ultrices.
           <br>
           <br>
-          Pellentesque at ipsum a eros imperdiet tempor. Mauris blandit enim nec nunc consectetur, sed elementum felis tempor. Quisque luctus vitae purus vel aliquam. Nunc semper porta velit a porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+          Pellentesque at ipsum a eros imperdiet tempor. Mauris blandit enim nec nunc consectetur, sed elementum felis tempor. Quisque luctus vitae purus vel aliquam. Nunc semper porta velit a porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.
         </p>
       </div>
     </div>
-    <div id="sec3border"></div>
+    <div id="trigger1" style="margin-top: 280px;height: 100px; width: 100px; position:absolute;z-index:9999999;"></div>
+
+    <div id="step1background">
+          <div id="titleStep1Container">
+            <div id="title">Allt börjar med en idé..</div>
+            <div id="underTitle">Som vi självklart hjälper till att skapa om behovet finns.</div>
+          </div>
+    </div>
+      <section class="panel" id="steps1" style="border-radius:none; background-color: transparent; margin-top: 200px;">
+      	<div id="step1" style="border-radius: 3px;"></div>
+      </section>
+
+
+    <div id="sec4border"></div>
+    <div id="trigger2" style="height: 100px; width: 100px; position:absolute;z-index:99999999; margin-top:-420px;"></div>
+
+    <section class="panel" id="steps2" style="margin-top:-500px;border-radius:none; background-color: transparent;">
+    	<div id="step2"></div>
+    </section>
+
+    <div id="sec5border"></div>
+    <div id="trigger3" style="height: 100px; width: 100px; position:absolute;z-index:99999999; margin-top:-460px;"></div>
+
+    <section class="panel" id="steps3" style="margin-top:-500px;border-radius:none; background-color: transparent;">
+    	<div id="step3"></div>
+    </section>
+
+    <div id="footer"></div>
   </body>
   <script type="text/javascript" src="js/animate.css"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script type="text/javascript">
     setInterval(function(){
-
-
-
       var winWidth = $(window).width();
-
       if(winWidth < 440 && winWidth > 370){
         $("#slogo").css("font-size","22px");
         $("#slogo").css("line-height","30px");
@@ -73,5 +95,65 @@
         $("#slogo").css("line-height","50px");
       }
     }, 100);
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/ScrollMagic.min.js"></script>
+  <script src="js/debug.addIndicators.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script>
+    $(function () { // wait for document ready
+      // init
+      var controller = new ScrollMagic.Controller({
+        globalSceneOptions: {
+				  triggerHook: '0.2'
+			  }
+      });
+      var scene1 = new ScrollMagic.Scene({
+        triggerElement: "#trigger1",
+        duration: 640
+      })
+						.setPin("#steps1")
+						.addIndicators()
+						.addTo(controller);
+      var scene2 = new ScrollMagic.Scene({
+        triggerElement: "#trigger2",
+        duration: 640
+      })
+            .setPin("#steps2")
+            .addIndicators()
+            .addTo(controller);
+
+      var scene3 = new ScrollMagic.Scene({
+        triggerElement: "#trigger3",
+        duration: 100
+      })
+            .setPin("#steps3")
+            .addIndicators()
+            .addTo(controller);
+
+    });
+  </script>
+  <script>
+  var waypoint = new Waypoint({
+    element: document.getElementById('sec4border'),
+    handler: function(direction) {
+      if(direction == "down"){
+        document.getElementById('steps1').style.height = "40px";
+      }else if (direction == "up") {
+        document.getElementById('steps1').style.height = "600px";
+      }
+    }
+  })
+
+  var waypoint2 = new Waypoint({
+    element: document.getElementById('sec5border'),
+    handler: function(direction) {
+      if(direction == "down"){
+        document.getElementById('steps2').style.height = "40px";
+      }else if (direction == "up") {
+        document.getElementById('steps2').style.height = "600px";
+      }
+    }
+  })
   </script>
 </html>

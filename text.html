@@ -1,0 +1,44 @@
+<style type="text/css">
+	.panel {
+		height: 100%;
+		width: 100%;
+	}
+	.panel.green {
+		margin-bottom: 400px
+	}
+</style>
+<section class="panel blue">
+	<b>ONE</b>
+</section>
+<section class="panel turqoise">
+	<b>TWO</b>
+</section>
+<section class="panel green">
+	<b>THREE</b>
+</section>
+<section class="panel bordeaux">
+	<b>FOUR</b>
+</section>
+<script>
+	$(function () { // wait for document ready
+		// init
+		var controller = new ScrollMagic.Controller({
+			globalSceneOptions: {
+				triggerHook: 'onLeave'
+			}
+		});
+
+		// get all slides
+		var slides = document.querySelectorAll("section.panel");
+
+		// create scene for every slide
+		for (var i=0; i<slides.length; i++) {
+			new ScrollMagic.Scene({
+					triggerElement: slides[i]
+				})
+				.setPin(slides[i])
+				.addIndicators() // add indicators (requires plugin)
+				.addTo(controller);
+		}
+	});
+</script>
