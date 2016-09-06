@@ -1,0 +1,205 @@
+body {
+  background-color: #eee;
+  margin: 0px;
+  min-width: 300px;
+}
+.overlay {
+  background-color: #182e4a;
+  background-image: url(../img/dot.svg),linear-gradient(140deg,rgba(24,46,74,.85),rgba(70,174,195,.65)),url(../img/background.jpg);
+  background-position: center;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 3px,cover,cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 500px;
+  position: relative;
+  height: 100vh;
+}
+#header {
+  height: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  top: calc(50% - 71px);
+  transform: translateY(-50%);
+}
+#slogo {
+  font-family: gotNormal;
+  font-size: 45px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #d7eff3;
+  box-sizing: border-box;
+  text-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 2px;
+}
+#underSlogo {
+  font-family: gotLight;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: .25px;
+  color: #d7eff3;
+  box-sizing: border-box;
+  text-shadow: 0 1px 2px rgba(0,0,0,.3);
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+@font-face {
+  src: url('ufonts.com_gotham-bold.ttf');
+  font-family: 'gotBold';
+  font-weight: 100;
+}
+@font-face {
+  src: url('ufonts.com_gotham-book.ttf');
+  font-family: 'gotNormal';
+  font-weight: 300;
+}
+@font-face {
+  src: url('ufonts.com_gotham-light.ttf');
+  font-family: 'gotLight';
+  font-weight: 200;
+}
+#button {
+    box-shadow: rgba(0, 0, 0, 0.207843) 0px 1px 3px 0px;
+    display: block;
+    font-weight: 200;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    max-width: 300px;
+    position: relative;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 0px;
+    width: 100%;
+    z-index: 100;
+    background: linear-gradient(rgb(105, 195, 57) 0px, rgb(62, 189, 77) 100%);
+    border-radius: 5px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    outline: 0px;
+    color: white;
+    font-family: gotNormal;
+    height: 50px;
+    line-height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#button:hover {
+  background: linear-gradient(rgb(105, 195, 57) 0px, rgb(68, 204, 84) 100%);
+  cursor: pointer;
+}
+.navbar {
+   background-color: transparent !important;
+   background: transparent !important;
+   border-color: transparent !important;
+   padding-top: 5px;
+}
+
+.navbar li {
+  color: #000 !important;
+}
+.active {
+  background-color: transparent  !important;
+}
+#navbarWidth {
+  max-width: 1000px;
+}
+#brandIcon {
+  -webkit-filter: drop-shadow(0px 1px 3px 0px rgba(0, 0, 0, 0.0980392));
+  filter: url(#drop-shadow);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+  height: 70px;
+  margin-top: -6px;
+}
+#brandName {
+  color: white;
+  float: left;
+  margin-top: 18px;
+  font-family: gotNormal;
+  font-size: 18px;
+  text-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 2px;
+}
+.link {
+  color: white !important;
+  font-family: gotNormal !important;
+  font-size: 15px;
+  margin-top: 5px;
+}
+#brandName:hover {
+  cursor: default;
+}
+.navbar-toggle {
+  border: none !important;
+}
+.navbar-toggle:hover {
+  background-color: none !important;
+}
+#section2 {
+  width: 100%;
+  min-height: 340px;
+}
+#sec2image {
+  min-height: 340px;
+  background-image: url(../img/code.jpg);
+  background-position: center;
+  background-size: cover;
+  border-right: 1px solid lightgray;
+}
+#sec2text {
+  min-height: 340px;
+  overflow: hidden;
+  padding-left: 40px;
+  padding-top: 30px;
+}
+#sec2text #title {
+  width: 100%;
+  min-height: 50px;
+  font-family: gotNormal;
+  font-size: 21px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #25292d;
+}
+#logo2 {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 9999;
+}
+#overlay2 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  position: absolute;
+}
+#sec2text p {
+  font-size: 15px;
+  font-family: gotLight;
+  color: #6f7c82;
+  font-weight: 200;
+  letter-spacing: 0.25;
+  margin-top: -20px;
+  line-height: 30px;
+}
+#sec3border {
+  width: 100%;
+  height: 160px;
+  background-color: lightgray;
+}
+#show-navbar {
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-top: -60px;
+  margin-right: 20px;
+}
