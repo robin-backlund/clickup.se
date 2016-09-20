@@ -205,15 +205,33 @@ body {
   width: 100vw;
   position: absolute;
   margin-top: -630px;
-  z-index: 9999999;
+  z-index: 99999999999999999999999;
   border: 1px solid lightgray;
+}
+#sec4border #title {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  text-align: center;
+  padding-top: 50px;
+  font-family: gotNormal;
+  font-size: 25px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #737373;
+  box-sizing: border-box;
+  text-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 2px;
+
 }
 #sec5border {
   height: 160px;
   background-color: lightgray;
   width: 100vw;
   position: absolute;
-  margin-top: -520px;
+  margin-top: -620px;
   z-index: 9999999;
 }
 #show-navbar {
@@ -224,14 +242,12 @@ body {
   margin-right: 20px;
 }
 #step1 {
-  width: 100%;
+  width: 600px;
   height: 500px;
-  background-image: url("../img/product.jpg");
+  background-image: url("../img/sketch.jpg");
   border: 1px solid lightgray;
   z-index: 99999999999;
-  -webkit-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.23);
--moz-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.23);
-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.23);
+  position: absolute;
 }
 #step2 {
   width: 100%;
@@ -239,9 +255,6 @@ box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.23);
   background-image: url("../img/product.jpg");
   border: 1px solid lightgray;
   z-index: 99999999999;
-  -webkit-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.23);
--moz-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.23);
-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.23);
 }
 #step3 {
   width: 100%;
@@ -273,6 +286,24 @@ box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.23);
   -ms-flex-direction: column;
   flex-direction: column;
   position: absolute;
+}
+#step2background {
+  width: 100vw;
+  min-height: 900px;
+  background-color: #eeeeee;
+  background-position: center;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 3px,cover,cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  margin-top: -600px;
+  z-index: -2;
 }
 #titleStep1Container {
   min-width: 600px;
@@ -308,5 +339,111 @@ box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.23);
 #footer {
   width: 100%;
   min-height: 200px;
-  background-color: rgb(43, 43, 43);
+  background-color: #182e4a;
+  background-image: url(../img/dot.svg),linear-gradient(140deg,rgba(24,46,74,.85),rgba(70,174,195,.65));
+  background-position: center;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 3px,cover,cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+#projectSection {
+  width: 100%;
+  height: 80px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3f4c6b+0,3f4c6b+100;Blue+Grey+Flat */
+background: rgb(63,76,107); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(63,76,107,1) 0%, rgba(63,76,107,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(63,76,107,1) 0%,rgba(63,76,107,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(63,76,107,1) 0%,rgba(63,76,107,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#3f4c6b',GradientType=0 ); /* IE6-9 */
+text-align: center;
+margin-top: -50px;
+}
+#projectSection #title {
+  line-height: 85px;
+  color: #d7eff3;
+  box-sizing: border-box;
+  text-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 2px;
+  font-family: gotNormal;
+  font-size: 20px;
+  opacity: 0.96;
+  letter-spacing: 2px;
+}
+#projectList {
+  width: 100%;
+  min-height: 200px;
+  overflow: hidden;
+  background-color: #182e4a;
+}
+.col-md-4 {
+  padding: 0px !important;
+}
+#project1 {
+  min-height: 200px;
+  background-image: url(../img/davidnarrowe/davidnarrowe-background.jpg);
+  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+#project2 {
+  min-height: 200px;
+  background-image: url(../img/psykologlovegrahn/psykologlovegrahn-background.jpg);
+  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+#project-overlay {
+  background: url(../img/dot.svg),radial-gradient(circle farthest-corner at 100% 100%,#46b8cd,#276073 50%,#182e4a);
+  background-size: 3px,auto;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+  opacity: 0;
+  transition: .3s;
+  width: 100%;
+  z-index: 999;
+  position: absolute;
+}
+#project-img {
+  max-width: 280px;
+  opacity: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 27px;
+  z-index: 1000;
+}
+#project-overlay:hover {
+  cursor: pointer;
+}
+#project-img:hover {
+  cursor: pointer;
+}
+.project:hover {
+  cursor: pointer;
+}
+#contact {
+  min-height: 600px;
+  background-color: white;
+  width: 100%;
 }
