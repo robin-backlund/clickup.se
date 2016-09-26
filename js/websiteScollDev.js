@@ -60,6 +60,57 @@ var waypoint6 = new Waypoint({
     }
   }
 })
+var waypoint7 = new Waypoint({
+  element: document.getElementById('navbar2-trigger'),
+  handler: function(direction) {
+    if(direction == "down"){
+      $("#navbar-shadow2").css("margin-top","0");
+      $("#navbar-shadow2").addClass("slideInDown");
+      $("#navbar-shadow2").removeClass("slideOutUp");
+      $("#navbar2-link1").toggleClass("hovered");
+    }else if (direction == "up") {
+      $("#navbar-shadow2").removeClass("slideInDown");
+      $("#navbar-shadow2").addClass("slideOutUp");
+      $("#navbar2-link1").toggleClass("hovered");
+    }
+  }
+})
+var waypoint8 = new Waypoint({
+  element: document.getElementById('navbar2-trigger2'),
+  handler: function(direction) {
+    if(direction == "down"){
+      $("#navbar2-link2").toggleClass("hovered");
+      $("#navbar2-link1").toggleClass("hovered");
+    }else if (direction == "up") {
+      $("#navbar2-link1").toggleClass("hovered");
+      $("#navbar2-link2").toggleClass("hovered");
+    }
+  }
+})
+var waypoint9 = new Waypoint({
+  element: document.getElementById('navbar2-trigger3'),
+  handler: function(direction) {
+    if(direction == "down"){
+      $("#navbar2-link3").toggleClass("hovered");
+      $("#navbar2-link2").toggleClass("hovered");
+    }else if (direction == "up") {
+      $("#navbar2-link2").toggleClass("hovered");
+      $("#navbar2-link3").toggleClass("hovered");
+    }
+  }
+})
+var waypoint10 = new Waypoint({
+  element: document.getElementById('navbar2-trigger4'),
+  handler: function(direction) {
+    if(direction == "down"){
+      $("#navbar2-link4").toggleClass("hovered");
+      $("#navbar2-link3").toggleClass("hovered");
+    }else if (direction == "up") {
+      $("#navbar2-link3").toggleClass("hovered");
+      $("#navbar2-link4").toggleClass("hovered");
+    }
+  }
+})
 var waypoint = new Waypoint({
   element: document.getElementById('sec4border'),
   handler: function(direction) {
