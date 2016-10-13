@@ -10,14 +10,12 @@ $(function () { // wait for document ready
     duration: 640
   })
         .setPin("#steps1")
-        .addIndicators()
         .addTo(controller);
   var scene2 = new ScrollMagic.Scene({
     triggerElement: "#trigger2",
     duration: 680
   })
         .setPin("#steps2")
-        .addIndicators()
         .addTo(controller);
 });
 var waypoint3 = new Waypoint({

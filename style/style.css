@@ -20,6 +20,9 @@ body {
   position: relative;
   height: 100vh;
 }
+.mobile-nav:active {
+  color: deepskyblue;
+}
 #header {
   min-height: 180px;
   overflow: hidden;
@@ -27,6 +30,7 @@ body {
   margin-right: auto;
   position: relative;
   width: 100%;
+  padding: 0px;
   max-width: 800px;
   top: calc(50% - 71px);
   transform: translateY(-50%);
@@ -34,7 +38,7 @@ body {
 #slogo {
   font-family: gotNormal;
   font-size: 40px;
-  line-height: 50px;
+  line-height: 65px;
   text-align: center;
   letter-spacing: 3px;
   color: #d7eff3;
@@ -341,7 +345,8 @@ body {
   z-index: -2;
 }
 #titleStep1Container {
-  min-width: 600px;
+  width: 100%;
+  max-width: 600px;
   height: 150px;
   margin-top: 25px;
   margin-left: auto;
@@ -506,13 +511,13 @@ margin-top: -50px;
   width: 100px;
   height: 70px;
   position: absolute;
-  margin-top: -90px;
+  margin-top: -78px;
 }
 #navbar2-trigger4 {
   width: 100px;
   height: 70px;
   position: absolute;
-  margin-top: -90px;
+  margin-top: -80px;
 }
 #navbarOverlay {
   position: absolute;
@@ -539,7 +544,7 @@ margin-top: -50px;
 .overlay-content {
   overflow-x: hidden; /* Disable horizontal scroll */
     position: relative;
-    top: 25%; /* 25% from the top */
+    top: 30%; /* 25% from the top */
     width: 100%; /* 100% width */
     text-align: center; /* Centered text/links */
     margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
@@ -567,6 +572,9 @@ margin-top: -50px;
     top: 20px;
     right: 45px;
     font-size: 60px;
+}
+.nav>li>a:hover, .nav>li>a:focus {
+    background-color: transparent;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */

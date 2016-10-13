@@ -16,10 +16,10 @@
 
       <!-- Overlay content -->
       <div class="overlay-content">
-        <a href="#" id="largeLink1">OM OSS</a>
-        <a href="#" id="largeLink2">FUNGERAR</a>
-        <a href="#" id="largeLink3">PROJEKT</a>
-        <a href="#" id="largeLink4">KONTAKTA OSS</a>
+        <a href="#" id="largeLink1" class="mobile-nav">OM OSS</a>
+        <a href="#" id="largeLink2" class="mobile-nav">FUNGERAR</a>
+        <a href="#" id="largeLink3" class="mobile-nav">PROJEKT</a>
+        <a href="#" id="largeLink4" class="mobile-nav">KONTAKTA OSS</a>
       </div>
 
     </div>
@@ -49,10 +49,10 @@
       <nav class="navbar navbar2 navbar-fixed-top animated" id="navbar-shadow2">
         <div class="container-fluid" id="navbarWidth" style=" z-index: 9999999999999999999999999">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" onclick="openNav();" id="navbar-toggle1">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+            <button type="button" class="navbar-toggle" style="margin-top: 25px !important;" data-toggle="collapse" onclick="openNav();" id="navbar-toggle1">
+              <span class="icon-bar" style="background-color: gray !important;"></span>
+              <span class="icon-bar" style="background-color: gray !important;"></span>
+              <span class="icon-bar" style="background-color: gray !important;"></span>
             </button>
             <img class="navbar-brand" id="brandIcon2" style="" src="img/logo2.png">
             <div id="brandName2">ClickUp Webbyrå</div>
@@ -67,9 +67,9 @@
           </div>
         </div>
       </nav>
-      <div id="header" class="col-md-6">
+      <div id="header" class="col-md-12">
         <h1 id="slogo">Profesionella hemsidor, <br> till marknadens bästa pris.</h1>
-        <h2 id="underSlogo">Etiam ac interdum risus. Morbi nec porta odio, quis lobortis lorem.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        <h2 id="underSlogo">Som vi bygger efter era behov och krav på proffisionell nivå, vilket gör våra kunder till de nöjdaste på alla sätt.</h2>
         <div id="button">ER NYA HEMSIDA</div>
       </div>
       <div id="navbar2-trigger"></div>
@@ -94,6 +94,7 @@
         <div id="title">Allt börjar med en idé..</div>
         <div id="underTitle">Som vi självklart hjälper till att framställa om behovet finns.</div>
       </div>
+    </div>
     </div>
     <div id="step1fade1" style="width: 100px; height: 100px; position: absolute; margin-top: 360px;"></div>
     <div id="step1fade2" style="width: 100px; height: 100px; position: absolute; margin-top: 500px;"></div>
@@ -153,7 +154,7 @@
     setInterval(function(){
       var winWidth = $(window).width();
       if(winWidth < 440 && winWidth > 370){
-        $("#slogo").css("font-size","22px");
+        $("#slogo").css("font-size","26px");
         $("#slogo").css("line-height","30px");
       }else if (winWidth < 370) {
         $("#slogo").css("font-size","20px");
@@ -210,5 +211,5 @@
   <script src="js/jquery.scrollTo.min.js" type="text/javascript"></script>
   <script src="js/scrollAnimation.js" type="text/javascript"></script>
   <script src="js/websiteScollDev.js" type="text/javascript"></script>
-
+  <script src="js/responsive.js" type="text/javascript"></script> 
 </html>
